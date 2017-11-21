@@ -6,6 +6,7 @@ import { Observable } from 'rxjs/Rx';
 
 @Injectable()
 export class SessionService {
+
   constructor(private http: Http) { }
 
  handleError(e) {
@@ -41,8 +42,4 @@ export class SessionService {
      .map(res => res.json())
      .catch(this.handleError);
  }
-}
-
-  constructor() { }
-
 }
